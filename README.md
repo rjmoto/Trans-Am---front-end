@@ -29,3 +29,8 @@ year: number
 condition: array of strings
 price: number
 description: string
+
+## Workflow
+
+<img width="841" alt="image" src="https://user-images.githubusercontent.com/62805525/157550135-105346f0-1119-4e32-af1a-4b71fb6d8586.png">
+
