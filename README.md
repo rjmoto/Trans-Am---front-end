@@ -23,8 +23,9 @@ As a user, I want to see what is for sale
 
 ## Models
 
-make - string
-model - string
-year - number
-condition - array of strings
-price - number
+make: string
+model: string
+year: number
+condition: array of strings
+price: number
+description: string
