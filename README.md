@@ -1,36 +1,70 @@
-# Trans Am Time Machines
+# Getting Started with Create React App
 
-#### Software Engineering Capstone Project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This web app will utilize React and Contentful in an effort to produce an asthetically pleasing and easy to navigate reproduction of Trans Am Specialites' website (https://transamflorida.com/index.htm), focusing on their core services for this project's MVP.
+## Available Scripts
 
-This project was inspired by transamflorida.com, also known as Trans Am Specialities.  The owners have kindly granted permission for the use of their photos and content for the purposes of this demo project.
+In the project directory, you can run:
 
- is an auto shop in Florida that specializes in restoring classic Pontiac Trans Ams, especially the popular second generation Trans Ams, among other makes and models.  I have been a fan of Trans Am specialities since I first acquired my own Firebird, and I've found them to be an authority on these classics.  In addition to restoring these iconic cars for clients around the globe, they also sell parts and do consignment sales; they are in essence a one stop shop for all things Trans Am.
+### `npm start`
 
-## Home Page Wireframe
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-<img width="841" alt="image" src="https://user-images.githubusercontent.com/62805525/157369588-aa6bf487-523f-46e2-9fbc-2e6be9467422.png">
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Component Hierarchy
+### `npm test`
 
-<img width="841" alt="image" src="https://user-images.githubusercontent.com/62805525/157371616-86495287-5097-4873-9907-70def69f8682.png">
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## User Stories
+### `npm run build`
 
-As a user, I want to know what services this business provides and where they're located
-As a user, I want to see what is for sale
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Models
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-make: string
-model: string
-year: number
-condition: array of strings
-price: number
-description: string
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Workflow
+### `npm run eject`
 
-<img width="841" alt="image" src="https://user-images.githubusercontent.com/62805525/157550135-105346f0-1119-4e32-af1a-4b71fb6d8586.png">
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
