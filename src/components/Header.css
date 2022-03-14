@@ -27,7 +27,16 @@ footer {
     background-color: darkgray;
 }
 
-/* html, body {
-height: 100%;
-width: 100%;
-} */
+.CardGroup {
+    background-color: dimgray;
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; */
+}
+
+.Card {
+    background-color: grey;
+    width: 25vw;
+    margin: 1%;
+}
