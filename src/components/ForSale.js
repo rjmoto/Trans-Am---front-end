@@ -1,33 +1,67 @@
 import { CardGroup, Card, CardImg, CardBody, CardTitle, CardText, Button, CardSubtitle } from 'reactstrap';
+import { useEffect, useState } from 'react';
+import { config } from 'dotenv';
+const contentful = require('contentful');
 
 function ForSale() {
+  let [cars, setCars] = useState([])
+  useEffect(() => {
+    const client = contentful.createClient({
+      space: {process.env.REACT_APP_SPACE},
+      accessToken: {process.env.REACT_APP_TOKEN},
+    });
+    client.getEntries().then(function (entries) {
+      setCars (entries.items)
+      console.log(cars)
+      // log the title for all the entries that have it
+      cars.forEach(function (entry) {
+        let car = entry.fields
+        console.log(car)
+      });
+    });
+  }, [])
+  
+
   return (
 <CardGroup className='CardGroup'>
-  <Card className='Card'>
+{
+  cars.map((car, idx) => {
+  console.log(car, "cars")
+    return (
+    <Card className='Card' key={idx}>
     <CardImg
       alt="Card image cap"
-      src="https://transamflorida.com/1631.h17.jpg"
+      src={car.fields.img[0].fields.file.url}
       top
       width="100%"
     />
     <CardBody>
       <CardTitle tag="h5">
-        Card title
+        { car.fields.title }
       </CardTitle>
       <CardSubtitle
         className="mb-2 text-muted"
         tag="h6"
       >
-        Card subtitle
+        <p>Year: { car.fields.year }
+</p>
+        Condition: { car.fields.condition } | Price: { car.fields.price }
+
+
+
       </CardSubtitle>
       <CardText>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.       This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        {car.fields.description}
       </CardText>
       <Button>
         Button
       </Button>
     </CardBody>
   </Card>
+    )
+  })
+}
+{/*   
   <Card className='Card'>
     <CardImg
       alt="Card image cap"
@@ -77,7 +111,7 @@ function ForSale() {
         Button
       </Button>
     </CardBody>
-  </Card>
+  </Card> */}
   {/* <Card>
     <CardImg
       alt="Card image cap"
