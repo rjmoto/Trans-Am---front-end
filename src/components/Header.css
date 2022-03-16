@@ -10,38 +10,70 @@
     color: white;
 }
 
-nav {
-
+h1 {
+    margin: 0%;
+    font-family: fantasy;
 }
 
-footer {
-    text-align: center;
-    /* position: fixed; */
-    bottom: 0;
-    width: 100vw;
+h3 {
+    font-style: oblique;
+    font-family: fantasy;
+    color: goldenrod;
+}
+
+nav {
+    color: gold;
+}
+
+.About {
+    background-color: gold;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+}
+
+.Services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-left: 2em;
+    margin: 1em;
+    font-weight: 800;
+}
+
+.Info {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .Main {
-    background-color: gray;
+    background-color: black;
     height: 100vh;
     width: 100vw;
+    padding-top: 2vh;
 }
 
 .Home {
-    background-color: darkgray;
+    background-color: black;
+    color: white;
 }
 
 .CardGroup {
-    background-color: dimgray;
-    display: flex;
-    padding: 2.5%;
-    /* flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; */
+    background-color: black;
 }
 
 .Card {
-    background-color: grey;
-    width: 30vw;
-    margin: 2.5%;
+    color: white;
+    padding-bottom: 1em;
+    border-bottom: solid grey 1em;
+}
+
+.Contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
 }

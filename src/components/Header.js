@@ -1,22 +1,18 @@
 import "./Header.css";
 import { Link } from 'react-router-dom'
 
-// import Home from "./Home";
-// import ForSale from "./ForSale";
-// import Contact from "./Contact";
 
-
-
-function Header(props) {
+function Header() {
   return (
     <header className="Header">
-      <h3>World Famous {props.title}</h3>      
-      <h1>Trans Am Time Machines {props.name}</h1>
-      <h5>Your One Stop Firebird and Restoration Shop</h5>
+      <h3>World Famous</h3>      
+      <h1>Trans Am Time Machines</h1>
+      <hr></hr>
       <nav>
-        <Link to="/Home">HOME</Link>
-        <Link to="/ForSale">FOR SALE</Link>
-        <Link to="/About">ABOUT US</Link>
+        <Link to="/Home">HOME</Link> |  &nbsp;
+        <Link to="/ForSale">FOR SALE</Link> |  &nbsp;
+        <Link to="/Favorites">FAVORITES</Link> |  &nbsp;
+        <Link to="/Services">SERVICES</Link> |  &nbsp;
         <Link to="/Contact">CONTACT US</Link>
       </nav>
     </header>

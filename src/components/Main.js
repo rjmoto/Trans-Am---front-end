@@ -1,28 +1,22 @@
 import React from "react";
 import Home from "./Home";
 import ForSale from "./ForSale";
+import Favorites from "./Favorites";
 import Contact from "./Contact";
-// import Home from "./Home"
-import About from "./About";
-// import About from "./About";
+import Services from "./Services";
 import { Routes, Route } from "react-router-dom";
 
 function Main() {
     
   return (
     <div className="Main">
-      <p>Main Component/Containter: This is where all my content will display</p>
-      {/* <Home />
-      <ForSale /> */}
-
       <Routes>
         <Route path="/Home" element={ <Home />} />
         <Route path="/ForSale" element={ <ForSale />} />
+        <Route path="/Favorites" element={ <Favorites />} />
         <Route path="/Contact" element={ <Contact />} />
-        <Route path="/About" element={ <About />} />
+        <Route path="/Services" element={ <Services />} />
       </Routes>
-
-      <footer className="">fb instagram twitter Copyright &copy; 2022</footer>
     </div>
   );
 }
